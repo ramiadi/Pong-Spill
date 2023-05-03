@@ -34,9 +34,9 @@
       score_font er en standard font fra Sysfont med en størrelse på 100 piksler. Første argumentet None lager et standard font fra systemet
       
       Metoder:
-      tegn_sirkel metoden lager en sirkel som skal være i vinduet, ha et farge, den skal ha en x posisjon og y posisjon, og ha en radius  
+      Metoden tegn_sirkel: #Metoden lager en sirkel som skal være i vinduet, ha et farge, den skal ha en x posisjon og y posisjon, og ha en radius  
      
-      #hver gang flytt metoden kalles, vil ballens posisjon på skjermen oppdateres ved hjelp av if-tester
+      Metoden flytt: #hver gang flytt metoden kalles, vil ballens posisjon på skjermen oppdateres ved hjelp av if-tester
           #Denne if- testen holder ballen innenfor skjermens høyde
           hvis y posisjonen - radius er mindre eller ælik 0 eller y posisjonen + radius er større eller ælik Vinduets høyde skal y-farten være lik - yfart.      
        
@@ -53,7 +53,20 @@
           sett ballens posisjon til midten av skjermen
           sett ballens xfart til -0.5
           sett ballens yfart til en tilfeldig verdi mellom -1 og 1
-      #
+      
+     #Oppdaterer ballens posisjon ved å legge til i x- og y-retning
+     Legg til xfart til ballens x-posisjon
+     Legg til yfart til ballens y-posisjon
+      
+     #Lag tekstverdier som viser spillerens poengsum
+     lag tekstverdi for spiller 1 sin poengsum ved å bruke score_font og score1
+     lag tekstverdi for spiller 2 sin poengsum ved å bruke score_font og score2
+     
+     Metoden tegn_score: metoden for oss til å tegne på skjermens med riktig posisjon
+     
+     
+
+
 
 
 
