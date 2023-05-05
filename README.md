@@ -90,8 +90,8 @@
        Opprett en spillerobjekt: spiller2 med bredde 10, høyde 175, x-posisjon lik VINDU_BREDDE minus 15 og y-posisjon lik VINDU_HOYDE minus 400, med fargen (255, 255, 255) xfart på 1 og yfart på 0, tastene K_UP og K_Down
        
        Opprett en ballobjekt: ball1 med radius 10 og fargen (255, 255, 255).
-        
- 
+       
+
 
 
 
