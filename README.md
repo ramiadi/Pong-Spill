@@ -64,7 +64,32 @@
      
      Metoden tegn_score: metoden for oss til å tegne på skjermens med riktig posisjon
      
-     
+     Metoden sjekk_kollisjon sjekker mellom ballen til spiller og spiller2:
+      Hvis (ballens x-posisjon pluss radius er større enn spillerens x posisjon og ballens x-posisjon minus radius er mindre enn spillerens x-posisjon pluss spillerens bredde og         ballens y-posisjon pluss radius er større enn spillerens y-posisjon og ballens y-posisjon minus radius er mindre enn spillerens y-posisjon pluss spillerens høyde):
+        ballens xfart blir negativ
+      Hvis ballens y-posisjon er mindre enn spillerens y-posisjon pluss halvparten av spillerens høyde:
+        ballens yfart blir redusert med 0.1
+      Ellers:
+        ballens yfart blir økt med 0.1
+      ballens xfart blir multiplisert med 1.1
+      ballens yfart blir multiplisert med 1.1
+      
+      Hvis (ballens x-posisjon pluss radius er større enn spillerens2 x posisjon og ballens x-posisjon minus radius er mindre enn spillerens2 x-posisjon pluss spillerens2 bredde og         ballens y-posisjon pluss radius er større enn spillerens2 y-posisjon og ballens y-posisjon minus radius er mindre enn spillerens2 y-posisjon pluss spillerens2 høyde):
+        ballens xfart blir negativ
+      Hvis ballens y-posisjon er mindre enn spillerens2 y-posisjon pluss halvparten av spillerens2 høyde:
+        ballens yfart blir redusert med 0.1
+      Ellers:
+        ballens yfart blir økt med 0.1
+      ballens xfart blir multiplisert med 1.1
+      ballens yfart blir multiplisert med 1.1
+    
+   Lager objekter 
+        Opprett en spillerobjekt spiller med bredde 10, høyde 175, x-posisjon 5 og y-posisjon lik VINDU_HOYDE minus 400, med fargen (255, 255, 255), xfart på 1 og yfart på 1, tastene K_w og K_s for bevegelse
+        Opprett en spillerobjekt spiller2 med bredde 10, høyde 175, x-posisjon lik VINDU_BREDDE minus 15 og y-posisjon lik VINDU_HOYDE minus 400, med fargen (255, 255, 255) xfart på 1 og yfart på 0, tastene K_UP og K_Down
+        Opprett en ballobjekt ball1 med radius 10 og fargen (255, 255, 255).
+        
+ 
+
 
 
 
